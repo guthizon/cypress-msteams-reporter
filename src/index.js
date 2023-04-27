@@ -51,6 +51,7 @@ if (program.verbose) {
 	} catch (error) {
 		error.name
 			? console.error(
+					`${error}`,
 					`${error.name}: ${error.message}`,
 					'\nFailed to read the Allure report.'
 			  )
